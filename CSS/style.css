@@ -1,0 +1,381 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+    box-sizing: border-box;
+  }
+    /* This CSS for index.html */
+  body{
+    background:black;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+header{
+  /* position:absolute; */
+  top: 1px;
+  height:100px;
+  width: 100%;
+  color: white;
+  border: 1px solid black;
+
+}
+
+#heading{
+  height:50px;
+  width: 500px;
+  /* margin: auto; */
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 35%;
+  /* border: 1px solid white; */
+  background: linear-gradient(to top ,rgb(20, 31, 31) 40%,#141a1f 60%);
+  border-radius: 5px;
+}
+#heading p{
+  font-size: 30px;
+  font-weight: bolder;
+  color: white;
+  margin-top: 5px;
+}
+section{
+  position:fixed;
+  color: white;
+  height: 57vh;
+  width: 95%;
+  /* border: 1px solid white; */
+  margin: auto;
+  margin-top:10px ;
+
+}
+#word{
+  /* background-color:black; */
+  height: 55vh;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  padding: 5px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  resize: none;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+textarea{
+  resize: none;
+  border-radius: 10px;
+  /* background:linear-gradient(to left ,	rgb(0, 128, 43)40%,rgb(0, 102, 0)60%); */
+  background-color: 	rgba(105,105,105,0.2);
+  color:white;
+  margin-left: 35px;
+}
+#subbutton{
+  background-color: black;
+  height: 40px;
+  width: 200px;
+  position: relative;
+  top:20px;
+  color: white;
+  border-radius: 20px;
+  left: 550px;
+  letter-spacing: 4px;
+			transition:1.5s;
+}
+#subbutton:hover{
+  cursor: pointer;
+  border: 3px groove white;
+  border-radius:20px;
+  color: black;
+  font-weight: bold;
+  box-shadow: 0 0 10px white,0 0 40px white,0 0 80px white,0 0 100px white inset;
+}
+footer{
+  position:absolute;
+  bottom: 1px;
+  height:40px;
+  width: 100%;
+  /* border-top: 2px groove grey; */
+  /* margin: auto; */
+}
+#ended{
+  position: relative;
+  display: inline-flex;
+  left: 550px;
+
+
+}
+#ended li{
+  color: grey;
+  letter-spacing: 2px;
+  list-style: none;
+  padding-left: 10px;
+  
+}
+span{
+  color: grey;
+  margin-left: 20px;
+}
+/* This CSS for info.html */
+.info-wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+.box {
+  background-color: rgba(128,128,128,0.5);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 200px;
+}
+
+.box h2 {
+  font-size: 80px;
+  font-weight: 100;
+  color: white
+}
+
+.box p {
+  font-size: 20px;
+  background-color:black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20%;
+}
+
+@media screen and (max-width: 768px) {
+  .info-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .info-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+  }
+}
+#literal{
+  font-family:monospace;
+  height: 60px;
+  width: 420px;
+  border:4px grovo  gray;
+  background:transparent;
+  margin: auto;
+}
+
+#literal p{
+  font-size: 30px;
+  font-weight: bold;
+  padding:10px ;
+  color: white;
+}
+#button1{
+  /* background-color: white; */
+  position: relative;
+  bottom: 50px;
+  left: 100px;
+  height: 50px;
+  width: 100px;
+  border-radius: 10px;
+  font-size: 30px;
+  background:transparent;
+}
+#button1 a{
+  text-decoration: none;
+  color: white;
+}
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.card {
+  border: none;
+  height: 320px
+}
+
+.forms-inputs {
+  position: relative
+}
+
+.forms-inputs span {
+  position: absolute;
+  top: -18px;
+  left: 10px;
+  background-color: #fff;
+  padding: 5px 10px;
+  font-size: 15px
+}
+
+.forms-inputs input {
+  height: 50px;
+  border: 2px solid #eee
+}
+
+.forms-inputs input:focus {
+  box-shadow: none;
+  outline: none;
+  border: 2px solid #000
+}
+
+.btn {
+  height: 50px
+}
+
+.success-data {
+  display: flex;
+  flex-direction: column
+}
+
+.bxs-badge-check {
+  font-size: 90px
+}
+#popup{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1001;
+  color: white;
+}
+#container{
+  width: 500px;
+  height: 250px;
+  background-image:linear-gradient( rgba(128, 128, 128,0.2),rgba(128, 128, 128,0.2));
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  box-shadow: 2px 2px 5px 3px white;
+  text-align: center;
+}
+#firstHeading{
+  transform: translateY(30px);
+  color: white;
+}
+#emailID{
+  width: 60%;
+  padding: 5px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+#pass{
+  width: 60%;
+  padding: 5px;
+  /* margin-top: 80px; */
+  margin-bottom: 20px;
+}
+.submitedID{
+  background-color: #0fc0fa;
+  border: none;
+  margin-top:10px ;
+  font-size: 1rem;
+  padding: 0.6rem;
+  color: black;
+  border-radius: 10px;
+  font-weight: bold;
+}
+/* CSS FOR ICON */
+.aaa{
+
+    height: 100px;  
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color:black;
+}
+.navigation{
+  margin-top: 20px;
+    width: 500px;
+    height: 60px;
+    position: relative;
+    background-color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation ul{
+    display: flex;
+    width: 400px;
+}
+.navigation ul li{
+    width: 100px;
+    height: 50px;
+    z-index: 1;
+    position: relative;
+    list-style: none;
+}
+.navigation ul li a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+}
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    line-height: 60px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+    color:white;
+}
+.navigation ul li:hover a .icon{
+    position: absolute;
+    top: -60%;
+    width: 60px;
+    height: 60px;
+    background-color: gray;
+    box-shadow: 0 0 10px white,0 0 40px white,0 0 80px white,0 0 100px white inset;
+    border-radius: 50%;
+    border: 3px solid white;
+    transition: 0.5s;
+    color: grey;
+    transform: translateY(-32px);
+}
+.navigation ul li a .text{
+    position: absolute;
+    top: 30px;
+    color: white;
+    font-weight: 600;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    opacity: 0;
+}
+.navigation ul li:hover a .text{
+    opacity: 1;
+    transform: translateY(10px);
+}
+
+/* LOGO */
+.logo{
+  /* background: url('https://obren.io/images/logo-text-analysis.png'); */
+  /* background-size: contain; */
+  /* background-repeat: no-repeat; */
+  position: absolute;
+  top: 30px;
+  height: 100px;
+  width: 100px;
+  left: 30px;
+  /* border: 1px solid white; */
+}
+#LH{
+  position: absolute;
+  left: 90px;
+  top: 10px;
+  font-size: 70px;
+}
+
+                    
