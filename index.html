@@ -6,39 +6,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Text</title>
   <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="./CSS/pop.css">
   <!-- <link rel="stylesheet" href="./CSS/pop.css"> -->
 </head>
 
 <body>
   <!-- POPUP FORM -->
-   <!-- <button id="openPopup">Open Form</button>
 
-<div id="popupForm" class="popup">
-  <div class="form-box">
-    <span class="close-btn" id="closePopup">&times;</span>
-    <div class="tab-buttons">
-      <button class="tab active" onclick="showForm('login')">Login</button>
-      <button class="tab" onclick="showForm('signup')">Signup</button>
-    </div> -->
+  <div id="popupForm">
+    <h3 style="text-align: center; color: white;">Sign Up Here</h3>
+    <form>
+      <input type="text" placeholder="Username" required  style=" caret-color:white; background-color: transparent;">
+      <input type="email" placeholder="Your Email" required style="caret-color:white; background-color: transparent;">
+      <input type="password" placeholder="password" required style="caret-color:white; background-color: transparent;">
+      <input type="password" placeholder="confirm password" required style="caret-color:white; background-color: transparent;">
+      <div style="display: flex; width: 100%;  justify-content: space-evenly; margin-left: -5px; margin-top: 20px;">
+  
+        <button class="btnFromAnimation" style="width:80px;" type="submit">Sign Up</button>
+        <button class="btnFromAnimation" style="width: 80px; " type="submit" id="close">Close</button>
+      </div>
+<a href="#" id="showLogin" style="display: block; text-align: center; margin-top: 20px; text-decoration: underline; color: red;">Login here</a>
 
-    <!-- Login Form -->
-    <!-- <form id="loginForm" class="form-content active" onsubmit="return validateForm(this)">
-      <h2>Login</h2>
-      <input type="text" placeholder="Username" name="username">
-      <input type="password" placeholder="Password" name="password">
-      <button type="submit">Login</button>
-    </form> -->
 
-    <!-- Signup Form -->
-    <!-- <form id="signupForm" class="form-content" onsubmit="return validateForm(this)">
-      <h2>Signup</h2>
-      <input type="text" placeholder="Username" name="username">
-      <input type="email" placeholder="Email" name="email">
-      <input type="password" placeholder="Password" name="password">
-      <button type="submit">Signup</button>
     </form>
   </div>
-</div> -->
+
+
+
+  <div id="popupFormLogin" style="display: none;">
+
+    <h3 style="text-align:center;color: white;">Please Login</h3>
+    <form>
+      <input type="text" placeholder="Username" required style=" caret-color:white; color: black; background-color: transparent;">
+      <input type="password" placeholder="password" required style=" caret-color:white; color: black; background-color: transparent;">
+      <div style="display: flex; width: 100%;  justify-content: space-evenly; margin-left: -5px; margin-top: 20px;">
+        <button class="btnFromAnimation" style="width: 80px; padding: 10px;" type="submit">Login</button>
+        <button class="btnFromAnimation" style="width: 80px; padding: 10px;" type="submit" id="closeLogin">Close</button>
+      </div>
+    </form>
+  </div>
 
 
   <!-- MAIN CODE FOR TEXT ANALYSER -->
@@ -47,7 +53,7 @@
    
     <nav class="aaa">
       <div class="logo" >
-        <svg width="70" height="70" viewBox="0 0 320 291" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg id="nav-logo" width="70" height="70" viewBox="0 0 320 291" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_d_26_2)">
 <path d="M63.5511 256.03L93.304 208.124L39.4508 88.8404L10.5704 133.785L63.5511 256.03Z" stroke="url(#paint0_linear_26_2)" stroke-width="10" shape-rendering="crispEdges"/>
 <path d="M83.9116 270.096L136.756 272.877L174.994 210.999L104.623 64.4645L141.322 6.70413L91.2858 6.31416L55.5295 64.6186L120.521 209.588L83.9116 270.096Z" stroke="url(#paint1_linear_26_2)" stroke-width="10" shape-rendering="crispEdges"/>
@@ -93,6 +99,12 @@
 </svg>
 
       </div>
+
+      <div class="menu-toggle" id="menu-toggle">
+  <ion-icon name="menu-outline"></ion-icon>
+</div>
+
+
       <div class="navigation">
         <ul>
           <li class="list active">
@@ -102,19 +114,19 @@
             </a>
           </li>
           <li class="list">
-            <a href="CONTACT/contact.html">
+            <a href="./contact.html" >
               <span class="icon"><ion-icon name="call-outline"></ion-icon></span>
               <span class="text">Contact</span>
             </a>
           </li>
           <li class="list">
-            <a href="#">
+            <a href="./heip.html" >
               <span class="icon"><ion-icon name="help-circle-outline"></ion-icon></span>
               <span class="text">Help</span>
             </a>
           </li>
           <li class="list">
-            <a href="about.html">
+            <a href="./about.html">
               <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
               <span class="text">About Us</span>
             </a>
@@ -125,9 +137,9 @@
     </nav>
   </header>
   <div id="heading">
-    <marquee behavior="alternate" direction="right">
+
       <p>PLEASE WRITE HERE</p>
-    </marquee>
+    
   </div>
   <section>
 
@@ -136,6 +148,7 @@
       <button onclick="setText()" id="subbutton">GENERATE INFO</button>
     </div>
   </section>
+  
   <footer>
     
     
@@ -143,7 +156,20 @@
   </footer>
   <script src="js/textjsinfi.js"></script>
   <!-- JS FOR FORM-->
-  <!-- <script src="./js/script.js"> </script> -->
+  <script src="./js/script.js">
+  
+  
+  
+  </script>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+  const navigation = document.querySelector('.navigation');
+
+  menuToggle.addEventListener('click', () => {
+    navigation.classList.toggle('active');
+  });
+  </script>
   <!-- JS FOR ICONS -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

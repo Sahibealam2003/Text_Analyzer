@@ -52,5 +52,3 @@ const showData = () => {
 };
 
 
-let submit = document.getElementById('submitID')
-console.log(submit);

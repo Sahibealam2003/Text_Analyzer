@@ -1,24 +1,16 @@
-    /* Overlay background */
-    #overlay {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.5);
-        z-index: 999;
-    }
+::placeholder{
+    color: white;
+}
 
     /* Popup form box */
-    #popupForm {
+    #popupForm{
         display: none;
         position: fixed;
-        top: 30%;
+        top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background: rgba(0, 0, 0, 0.6);
-        z-index: 1001;
+        background: black;
+        z-index: 10001;
 
         padding: 20px 30px;
         border: 2px solid #444;
@@ -27,38 +19,36 @@
         border-radius: 10px;
     }
 
-    /* Close button */
-    .closeBtn {
-        width: 40px;
-        height:40px;
-        position: absolute;
-        top: -10px;
-        left: 320px;
-        padding: 5px;
-        background: none;
-        border: none;
-        font-size: 30px;
-        cursor: pointer;
-        border: 1px solid white;
-    }
+#popupFormLogin{
+            display: none;
+        position: fixed;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: black;
+        z-index: 10001;
 
-    .closeBtn:hover {
-        color: red;
-    }
+        padding: 20px 30px;
+        border: 2px solid #444;
+        box-shadow: 0 0 15px #000;
+        width: 300px;
+        border-radius: 10px;
+}
+
 
     /* Basic styling for form */
     input,
     button {
-        width: 100%;
-        padding: 8px;
+        width: 95%;
+        padding: 10px;
         margin-top: 10px;
         border-radius: 5px;
         border: 1px solid #ccc;
     }
 
     button[type="submit"] {
-        background-color: #4CAF50;
+        background-color: transparent;
         color: white;
-        border: none;
+        border: 1px solid gray;
         cursor: pointer;
     }
