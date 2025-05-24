@@ -46,7 +46,7 @@
         border: 1px solid #ccc;
     }
 
-    button[type="submit"] {
+    button {
         background-color: transparent;
         color: white;
         border: 1px solid gray;

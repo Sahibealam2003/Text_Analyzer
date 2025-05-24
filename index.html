@@ -16,14 +16,14 @@
   <div id="popupForm">
     <h3 style="text-align: center; color: white;">Sign Up Here</h3>
     <form>
-      <input type="text" placeholder="Username" required  style=" caret-color:white; background-color: transparent;">
-      <input type="email" placeholder="Your Email" required style="caret-color:white; background-color: transparent;">
-      <input type="password" placeholder="password" required style="caret-color:white; background-color: transparent;">
-      <input type="password" placeholder="confirm password" required style="caret-color:white; background-color: transparent;">
+      <input type="text" placeholder="Username" name="username" required  style=" caret-color:white; background-color: transparent;">
+      <input type="email" placeholder="Your Email" name="email" required style="caret-color:white; background-color: transparent;">
+      <input type="password" placeholder="password" name="password" required style="caret-color:white; background-color: transparent;">
+      <input type="password" placeholder="confirm password" name="confirmpass" required style="caret-color:white; background-color: transparent;">
       <div style="display: flex; width: 100%;  justify-content: space-evenly; margin-left: -5px; margin-top: 20px;">
   
         <button class="btnFromAnimation" style="width:80px;" type="submit">Sign Up</button>
-        <button class="btnFromAnimation" style="width: 80px; " type="submit" id="close">Close</button>
+        <button class="btnFromAnimation" style="width: 80px; " type="button" id="close">Close</button>
       </div>
 <a href="#" id="showLogin" style="display: block; text-align: center; margin-top: 20px; text-decoration: underline; color: red;">Login here</a>
 
@@ -37,11 +37,11 @@
 
     <h3 style="text-align:center;color: white;">Please Login</h3>
     <form>
-      <input type="text" placeholder="Username" required style=" caret-color:white; color: black; background-color: transparent;">
-      <input type="password" placeholder="password" required style=" caret-color:white; color: black; background-color: transparent;">
+      <input type="text" placeholder="Username" name="username" required style=" caret-color:white; color: black; background-color: transparent;">
+      <input type="password" placeholder="password" name="password" required style=" caret-color:white; color: black; background-color: transparent;">
       <div style="display: flex; width: 100%;  justify-content: space-evenly; margin-left: -5px; margin-top: 20px;">
         <button class="btnFromAnimation" style="width: 80px; padding: 10px;" type="submit">Login</button>
-        <button class="btnFromAnimation" style="width: 80px; padding: 10px;" type="submit" id="closeLogin">Close</button>
+        <button class="btnFromAnimation" style="width: 80px; padding: 10px;" type="button" id="closeLogin">Close</button>
       </div>
     </form>
   </div>
@@ -152,7 +152,7 @@
   <footer>
     
     
-    <div style="color: grey;">Copyright©2022</div>
+    <div style="color: grey;">Copyright©2020</div>
   </footer>
   <script src="js/textjsinfi.js"></script>
   <!-- JS FOR FORM-->
